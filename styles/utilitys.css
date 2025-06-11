@@ -1,5 +1,5 @@
 .container {
-    --max-width: 360px;
+    --max-width: 22.5rem;
     width: min(var(--max-width), 100% - var(--px) * 2);
     margin-inline: auto;
 }
@@ -13,9 +13,23 @@
     gap: var(--gap);
 }
 
+.flex {
+    display: flex;
+}
+
+.justify {
+    justify-content: space-between;
+}
+
+.grid {
+    display: grid;
+}
+
 @media (width >= 80rem) {
     .container {
         --max-width: 80rem;
+        width: min(var(--max-width), 100% - var(--px) * 2);
+        margin-inline: auto;
     }
 
     .gap-1\.5 {
