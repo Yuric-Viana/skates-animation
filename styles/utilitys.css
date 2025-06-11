@@ -4,6 +4,10 @@
     margin-inline: auto;
 }
 
+.gap-0\.7 {
+    gap: .75rem;
+}
+
 .gap-1 {
     gap: 1rem;
 }
@@ -11,6 +15,10 @@
 .gap-1\.5 {
     --gap: 1.5rem;
     gap: var(--gap);
+}
+
+.items-center {
+    align-items: center;
 }
 
 .flex {
@@ -33,7 +41,7 @@
     }
 }
 
-@media (width > 80rem) {
+@media (width >= 80rem) {
     .container {
         --max-width: 120rem;
         width: min(var(--max-width), 100% - var(--px) * 2);
