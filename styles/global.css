@@ -38,6 +38,7 @@
 
 html, button {
     font: var(--text-button);
+    overflow-x: hidden;
 }
 
 h1 {
