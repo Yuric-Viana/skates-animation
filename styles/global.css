@@ -20,15 +20,14 @@
     --bg-color: #FAFAFA;
 
     --ff-title: "Syne", sans-serif;
-    --ff-subtitle: "Montserrat", sans-serif;
+    --ff-text: "Montserrat", sans-serif;
     
     --text-sm: .875rem;
     --text-base: 1rem;
-    --text-lg: 2.5rem;
-    --text-xl: 4rem;
+    --text-xl: 2rem;
     
-    --text-lg: bold var(--text-xl)/125% var(--ff-title);
-    --text-md: bold var(--text-lg)/120% var(--ff-title);
+    --text-h1: bold var(--text-xl)/125% var(--ff-title);
+    --text-h2: bold var(--text-xl)/120% var(--ff-title);
 
     --text-button: 500 var(--text-base)/150% var(--ff-text);
     --text: 500 var(--text-sm)/150% var(--ff-text);
@@ -42,11 +41,11 @@ html, button {
 }
 
 h1 {
-    font: var(--ff-title);
+    font: var(--text-h1);
 }
 
 h2 {
-    font: var(--ff-subtitle);
+    font: var(--text-h2);
 }
 
 img {
@@ -61,5 +60,7 @@ a {
 @media (width >= 80rem) {
     :root {
         --px: 2rem;
+
+        --text-xl: 4rem;
     }
 }
