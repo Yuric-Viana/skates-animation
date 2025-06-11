@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Syne:wght@400..800&display=swap');
+
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --snitap-sun: #FFCD1E;
+    --snitap-sky-mid: #06B6D4;
+    --snitap-sky-light: #67E8F9;
+    --snitap-joy-mid: #DB2777;
+    --snitap-joy-light: #F472B6;
+    --snitap-leaf-mid: #16A34A;
+
+    --text: #000000;
+    --highligths: #000000;
+    --bg-color: #FAFAFA;
+
+    --ff-title: "Syne", sans-serif;
+    --ff-subtitle: "Montserrat", sans-serif;
+    
+    --text-sm: .875rem;
+    --text-base: 1rem;
+    --text-lg: 2.5rem;
+    --text-xl: 4rem;
+    
+    --text-lg: bold var(--text-xl)/125% var(--ff-title);
+    --text-md: bold var(--text-lg)/120% var(--ff-title);
+
+    --text-button: 500 var(--text-base)/150% var(--ff-text);
+    --text: 500 var(--text-sm)/150% var(--ff-text);
+
+    --px: 1.5rem;
+
+}
+
+html, button {
+    font: var(--text-button);
+}
+
+h1 {
+    font: var(--ff-title);
+}
+
+h2 {
+    font: var(--ff-subtitle);
+}
+
+@media (width >= 80rem) {
+    :root {
+        --px: 2rem;
+    }
+}
