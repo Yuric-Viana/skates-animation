@@ -1,0 +1,108 @@
+#gallery {
+    & header {
+        justify-content: center;
+        text-align: center;
+        margin-top: var(--py);
+
+        & h2 {
+            font: var(--text-title);
+        }
+    }
+
+    &>div {
+        margin-top: var(--px);
+    }
+}
+
+@media (width >=80rem) {
+    #gallery {
+        & img {
+            width: 100%;
+            height: auto;
+        }
+
+        &>div {
+            grid-template-areas:
+                'A B B'
+                'C C D';
+        }
+
+        & figure {
+            border-radius: 2.5rem;
+            overflow: hidden;
+            position: relative;
+            line-height: 0;
+
+            animation: image-appear 20s backwards ease-in-out;
+            animation-timeline: view();
+            animation-range: entry;
+
+            &[data-delay] {
+                animation-range: 200px 400px;
+            }
+
+            &>img {
+                height: 25rem;
+                object-fit: cover;
+                transition: scale .4s ease-in-out;
+            }
+
+            &:hover {
+                &>img {
+                    scale: 1.1;
+                }
+
+                &>figcaption {
+                    transform: translateY(0);
+                }
+            }
+
+            &:nth-child(1) {
+                grid-area: A;
+            }
+
+            &:nth-child(2) {
+                grid-area: B;
+            }
+
+            &:nth-child(3) {
+                grid-area: C;
+            }
+
+            &:nth-child(4) {
+                grid-area: D;
+            }
+        }
+
+        & figcaption {
+            position: absolute;
+            bottom: 0;
+            justify-content: flex-end;
+            width: 100%;
+
+            padding: 1.5rem 2rem;
+            transform: translateY(4rem);
+            transition: transform .5s ease-in-out;
+            
+            color: white;
+            font: var(--text-button);
+            background: linear-gradient(to top,
+                    rgb(0 0 0 / 0.64),
+                    rgb(0 0 0 / 0));
+
+            & img {
+                width: 2rem;
+                aspect-ratio: 1/1;
+                object-fit: cover;
+                border-radius: 50%;
+            }
+        }
+    }
+}
+
+@keyframes image-appear {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+}

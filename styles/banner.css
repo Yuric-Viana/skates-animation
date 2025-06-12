@@ -12,15 +12,15 @@
         animation: rolling 2s linear infinite both;
     }
 
-    & .bg-gradient {
-        background: linear-gradient(45deg,
-                var(--snitap-sky-light),
-                var(--snitap-joy-light));
-        background-size: 400%;
-        background-position: 0 50%;
+}
+& .bg-gradient {
+    background: linear-gradient(45deg,
+            var(--snitap-sky-light),
+            var(--snitap-joy-light));
+    background-size: 400%;
+    background-position: 0 50%;
 
-        animation: bg-gradient 20s ease infinite;
-    }
+    animation: bg-gradient 20s ease infinite;
 }
 
 @keyframes bg-gradient {

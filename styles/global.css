@@ -24,15 +24,18 @@
     
     --text-sm: .875rem;
     --text-base: 1rem;
+    --text-lg: 1.5rem;
     --text-xl: 2rem;
     
     --text-h1: bold var(--text-xl)/125% var(--ff-title);
     --text-h2: bold var(--text-xl)/120% var(--ff-title);
+    --text-title: bold var(--text-lg)/120% var(--ff-title);
 
     --text-button: 500 var(--text-base)/150% var(--ff-text);
     --text: 500 var(--text-sm)/150% var(--ff-text);
 
     --px: 1.5rem;
+    --py: 1.5rem;
 
 }
 
@@ -61,7 +64,9 @@ a {
 @media (width >= 80rem) {
     :root {
         --px: 2rem;
+        --py: 4.3rem;
 
+        --text-lg: 2.5rem;
         --text-xl: 4rem;
     }
 }
