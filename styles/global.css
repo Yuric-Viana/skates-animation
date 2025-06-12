@@ -41,6 +41,9 @@
 
 html, button {
     font: var(--text-button);
+}
+
+body {
     overflow-x: hidden;
 }
 
