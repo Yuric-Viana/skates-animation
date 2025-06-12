@@ -117,6 +117,15 @@
     }
 }
 
+@media (width >= 93.75rem) {
+    #gallery figure {
+        & > img {
+            height: 30rem;
+        }
+    }
+}
+
+
 @keyframes image-appear {
     from {
         opacity: 0;
