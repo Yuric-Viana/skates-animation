@@ -9,9 +9,9 @@
     }
 
     & .rolling {
-        animation: rolling 2s linear infinite both;
+        animation: rolling-mobile 2s linear infinite both;
     }
-
+    
 }
 & .bg-gradient {
     background: linear-gradient(45deg,
@@ -23,13 +23,29 @@
     animation: bg-gradient 20s ease infinite;
 }
 
+@media (width >= 80rem) {
+    #banner .rolling {
+        animation: rolling-desktop 2s linear infinite both;
+    }
+}
+
 @keyframes bg-gradient {
     50% {
         background-position: 100% 50%;
     }
 }
 
-@keyframes rolling {
+@keyframes rolling-mobile {
+    0% {
+        transform: translateX(-2px);
+    }
+
+    100% {
+        transform: translateX(-136px);
+    }
+}
+
+@keyframes rolling-desktop {
     0% {
         transform: translateX(4px);
     }
