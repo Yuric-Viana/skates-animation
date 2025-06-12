@@ -4,7 +4,6 @@ section.hero {
     justify-content: space-between;
     flex-direction: column-reverse;
     gap: 2rem;
-    overflow-x: hidden;
 
     & h1 {
         max-width: 19.5rem;
